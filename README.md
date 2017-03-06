@@ -47,7 +47,7 @@ Last Draft plugins use styled-components 💅 for the base styling.
 You can also add custom css to override the base styling with the following class names specified below:
 
 ```css
-.sticker-modal-wrapper {}
+.ld-sticker-modal-wrapper {}
 .ld-sticker-block-wrapper {}
 .ld-sticker-block {}
 .ld-sticker-block-image {}

@@ -15,7 +15,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Wrapper className='sticker-modal-wrapper'>
+      <Wrapper className='ld-sticker-modal-wrapper'>
         <Picker onSelected={::this.addSticker} closeModal={this.props.closeModal} />
       </Wrapper>
     )
