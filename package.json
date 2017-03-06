@@ -1,6 +1,6 @@
 {
   "name": "ld-sticker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Last Draft sticker plugin",
   "main": "lib/sticker/plugin.js",
   "scripts": {
