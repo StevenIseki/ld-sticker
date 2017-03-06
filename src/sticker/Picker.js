@@ -77,12 +77,12 @@ export default class extends Component {
     const {stickers} = this.state
     const {visible} = this.props
     return (
-      <GiphyPickerWrapper visible={visible}>
+      <GiphyPickerWrapper className='ld-sticker-picker-wrapper-outer' visible={visible}>
         <CloseWrapper
-          className='ld-sticker-close-button'
+          className='ld-button-sticker-picker-close-wrapper'
           onClick={this.props.closeModal}
         >
-          <Close width='24' height='24' viewBox='0 0 24 24' className='ld-button-close'>
+          <Close width='24' height='24' viewBox='0 0 24 24' className='ld-button-sticker-picker-close'>
             <g fill='currentColor' fillRule='evenodd'>
               <path d='M16.95 5.636l1.414 1.414L7.05 18.364 5.636 16.95z' />
               <path d='M16.95 18.364l1.414-1.414L7.05 5.636 5.636 7.05z' />
@@ -91,6 +91,7 @@ export default class extends Component {
         </CloseWrapper>
 
         <Input
+          className='ld-sticker-picker-input'
           name='giphy-search'
           type="text"
           autoCapitalize="none"
@@ -100,13 +101,13 @@ export default class extends Component {
           value={this.state.searchValue}
           onKeyDown={::this.onKeyDown}
           placeholder='Search for stickers' />
-        <GiphyWrapper>
+        <GiphyWrapper className='ld-sticker-picker-wrapper'>
           {
             stickers.map((g, i) => {
               let stickerUrl = g.fixed_width.url
               return (
                 <Giphy
-                  className='giphy-sticker'
+                  className='ld-sticker-picker-gif'
                   key={i}
                   src={stickerUrl}
                   onClick={() => {this.onGiphySelect(g)}} />

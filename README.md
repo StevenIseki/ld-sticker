@@ -37,3 +37,28 @@ export default class ExampleEditor extends Component {
   }
 }
 ```
+
+## Styles
+
+Last Draft plugins use styled-components 💅 for the base styling.
+
+## Custom Styles with CSS
+
+You can also add custom css to override the base styling with the following class names specified below:
+
+```css
+.sticker-modal-wrapper {}
+.ld-sticker-block-wrapper {}
+.ld-sticker-block {}
+.ld-sticker-block-image {}
+.ld-sticker-block-action {}
+.ld-button-sticker-close {}
+.ld-sticker-button {}
+.ld-button-sticker-picker-close {}
+.ld-button-sticker-picker-close-wrapper {}
+
+.ld-sticker-picker-input {}
+.ld-sticker-picker-wrapper-outer {}
+.ld-sticker-picker-wrapper {}
+.ld-sticker-picker-gif {}
+```
